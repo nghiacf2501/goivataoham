@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    function processConfirm(answer) {
+        let result = "";
+        if (answer) {
+            result = "Hãy chơi cờ vua nào";
+        } else {
+            result = "Có lẽ nên để lúc khác";
+        }
+        return result;
+    }
+
+    let confirmAnswer = confirm("Chúng ta có thể chơi một trò chơi không?");
+    let theAnswer = processConfirm(confirmAnswer);
+    alert(theAnswer);
+</script>
